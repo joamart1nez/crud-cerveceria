@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>WANNABE</h1>
+        <h2>Club Nocturno ~ Food n Drink</h2>
+    </header>
+    <nav>
+        <img src="img/navmenu.png" alt="">
+        <input type="checkbox" name="" id="">
+        <a href="/">Home</a>
+        <a href="/ordenar-online">Ordenar Online</a>
+        <a href="">Sobre nosotros</a>
+        <a href="">Galeria</a>
+    </nav>
+
+    <section>
+        <h2>Formulario enviado con exito, en breve llegara su pedido</h2>
+        <a href="/">Volver al inicio</a>
+    </section>
+</body>
+<style>
+    section{
+        margin: 3rem auto 8rem;
+        width: 90%;
+        height: 25rem;
+        background: url('img/slide3.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section h2{
+        font-size: 3rem;
+        font-weight: 500;
+        margin:20px 20px;
+        text-shadow: 2px 2px 10px rgb(97, 97, 97);
+    }
+
+    section a{
+        width:30%;
+        height: 40px;
+        margin:1rem auto;
+        font-size:22px;
+        background:rgb(220, 205, 10);
+        outline: none;
+        border: none;
+        color:#fff;
+        text-shadow: 2px 2px 10px #222;
+        border-radius: 3px;
+        transition: .3s;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        line-height: 35px; 
+        cursor:pointer;
+    }
+    section a:active{
+        transform: scale(.9);
+    }
+    section a:hover{
+        color:#fff;
+    }
+</style>
+</html>

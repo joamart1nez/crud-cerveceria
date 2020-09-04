@@ -1,0 +1,30 @@
+@media (max-width: 1024px) {
+    section{
+        margin-top: 45%;
+    }
+}   
+
+@media (max-width: 768px) {
+    section{
+        margin-top: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    section{
+        margin-top: 75%;
+    }
+    section h2{
+        display:none;
+    }
+}
+
+@media (max-width: 480px) {
+    section{
+        margin-top: 120%;
+    }
+}
+
+@media (max-width: 480px) {
+
+}

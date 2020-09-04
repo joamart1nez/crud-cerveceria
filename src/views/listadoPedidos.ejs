@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/slate/bootstrap.min.css" integrity="sha384-8iuq0iaMHpnH2vSyvZMSIqQuUnQA7QM+f6srIdlgBrTSEyd//AWNMyEaSF2yPzNQ" crossorigin="anonymous">
+    <title>Pedidos Cerveceria</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-3">Listado pedidos de cervezas</h1>
+        <table class="table table-striped table-bordered my-2">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Direccion</th>
+                    <th>Tipos y Cantidad</th>
+                    <th>Precio Total</th>
+                    <th>Estatus</th>
+                </tr>
+            </thead>
+            <tbody>
+               <% for(var i = 0; i < pedido.length; i++){ %>
+                    <tr>
+                        <td>
+                            <strong> <%= i+1 %></strong>
+                        </td>
+                        <td><%=pedido[i].name%></td>
+                        <td><%=pedido[i].phone%></td>
+                        <td><%=pedido[i].direction%></td>
+                        <td><%=pedido[i].list%></td>
+                        <td><%=pedido[i].precioTotal%></td>
+                        <td><a class="<%= pedido[i].status ? 'btn btn-success' : 'btn btn-muted'%> btn-block ml-auto mr-1" href="/changeStatus/<%= pedido[i]._id %>">Entregado</a>
+                            <a class="btn btn-primary p-2 ml-1" href="/edit/<%=pedido[i]._id%> btn-block ml-auto">Editar</a>
+                            <a class="btn btn-danger" id="delete" href="/delete/<%= pedido[i]._id%> btn-block ml-auto">Eliminar</a></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/slate/bootstrap.min.css"
+        integrity="sha384-idNH3UIOiZbCf8jxqu4iExnH34y5UovfW/Mg8T5WfNvoJolDvknoNqR69V2OexgF" crossorigin="anonymous">
+</head>
+<body class="1">
+    <div class="container mt-5 col-md-7 mx-auto">
+        <form action="/edit/<%=pedido._id%>" method="POST" class="bg-primary pb-1">
+            <div class="card-header mb-3 p-1">
+                <h2 class="d-flex justify-content-center m-2">Editar pedido</h2>  
+            </div>
+            <div class="form-group m-4">
+                <input type="text" id="name" class="form-control" name="name" placeholder="Nombre y Apellido"
+                    autofocus value="<%=pedido.name%>">
+            </div>
+            <div class="form-group m-4">
+                <input type="text" id="phone" class="form-control" name="phone" placeholder="Teléfono" value="<%=pedido.phone%>">
+            </div>
+            <div class="from-group m-4">
+                <input type="text" id="direction" class="form-control" name="direction" value="<%=pedido.direction%>"
+                    placeholder="Dirección">
+            </div>
+            <div class="from-group m-4">
+                <input type="text" id="list" class="form-control" name="list" value="<%=pedido.list%>"
+                    placeholder="Listado">
+            </div>
+            <div class="from-group m-4">
+                <input type="text" id="precioTotal" class="form-control" name="precioTotal" value="<%=pedido.precioTotal%>"
+                    placeholder="Precio Total">
+            </div>
+            <div class="from-group mx-5">
+               <button class="btn btn-primary btn-block mx-auto mb-3">Editar</button>  
+            </div>
+                       
+        </form>
+    </div>
+</body>
+</html>

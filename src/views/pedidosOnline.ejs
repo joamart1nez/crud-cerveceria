@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-pedidos-online.css">
+    <link rel="stylesheet" href="media-queries/media-pedidos-online.css">
+    <title>Wannabe</title>
+</head>
+
+<body>
+    <header>
+        <h1>WANNABE</h1>
+        <h2>Club Nocturno ~ Food n Drink</h2>
+    </header>
+    <nav>
+        <img src="img/navmenu.png" alt="">
+        <input type="checkbox" name="" id="">
+        <a href="/">Home</a>
+        <a href="">Ordenar Online</a>
+        <a href="">Sobre nosotros</a>
+        <a href="">Galeria</a>
+    </nav>
+    <section class="orders">
+        <div class="container">
+            <div class="menu">
+                <div class="card">
+                    <img src="img/pack-beer.webp" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Pack Artesanal</h3>
+                            <h4>$120</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/balde-corona.jpg" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Pack de Corona</h3>
+                            <h4>$180</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/descartable.webp" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Rubia descartable</h3>
+                            <h4>$30</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/sol.webp" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Cerveza Sol</h3>
+                            <h4>$60</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/heineken.jpg" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Pack de Heineken</h3>
+                            <h4>$120</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/whisky.webp" alt="">
+                    <div class="card-body">
+                        <div class="description">
+                            <h3>Vaso de Whisky</h3>
+                            <h4>$80</h4>
+                        </div>
+                        <div class="add-beer">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-order">
+                <div class="title-order">
+                    <h2>Mi lista</h2>
+                    <p>(0 items)</p>
+                </div>
+                <div class="list-order">
+                </div>
+                <div class="total">
+                    <h3>Total</h3>
+                    <h4>$0</h4>
+                </div>
+                <form action="/" method="POST">
+                    <input type="text" placeholder="Nombre" autocomplete="off" name="name" id="name">
+                    <input type="text" placeholder="Telefono" autocomplete="off" name="phone" id="phone">
+                    <input type="text" placeholder="Dirección" autocomplete="off" name="direction" id="direction" >
+                    <input type="text" id="infoFinalOrder" autocomplete="off" name="list" id="list">
+                    <input type="text" autocomplete="none" name="precioTotal" id="precioTotal">
+                    <button>Ordenar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="card-edit">
+        <span class="close">x</span>
+        <img src="img/whisky.webp" alt="">
+        <div class="card-body">
+            <div class="description">
+                <h3>Vaso de Whisky</h3>
+                <h4>$80</h4>
+                <button class="send-cant">Aceptar</button>
+            </div>
+            <div class="edit-cant">
+                <h3>Unidades</h3>
+                <p class="cont">
+                    <button id="span1">-</button>
+                    <span id="unidad">1</span>
+                    <button id="span2">+</button>
+                </p>                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript/eventos.js"></script>
+<script src="javascript/contador.js"></script>
+</html>
